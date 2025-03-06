@@ -129,6 +129,7 @@ sub editor {
   return 'Every Door' if $cr =~ /^Every Door /;
   return 'Mapa AED' if $cr =~ /aed\.openstreetmap\.org\.pl/;
   return 'Map builder' if $cr =~ /^Map builder /;
+  return 'OsmAPP' if $cr =~ /^OsmAPP/;
   return 'Other';
 }
 
@@ -159,7 +160,8 @@ my %wikinames = (
   'OsmPipeline' => 'Import/Maine E911 Addresses',
   'LINZ Import' => 'Import/New Zealand Street Addresses (2021)',
   'OSM ↔ Wikidata' => 'OSM ↔ Wikidata matcher',
-  'JOSM Reverter' => 'JOSM/Plugins/Reverter'
+  'JOSM Reverter' => 'JOSM/Plugins/Reverter',
+  'OsmAPP' => 'OsmAPP'
 );
 
 my @wiki_self = (
